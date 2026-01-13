@@ -1,11 +1,11 @@
 {
-  "name": "pong",
+  "name": "milena",
   "module": "index.ts",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "bun run --hot --watch app.ts",
-    "build": "bun build --compile --minify ./app.ts --outfile pong --target bun"
+    "build": "bun build --compile --minify ./app.ts --outfile milena --target bun"
   },
   "devDependencies": {
     "@types/bun": "latest"

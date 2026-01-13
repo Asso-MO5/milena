@@ -8,9 +8,8 @@ RUN bun run build
 FROM docker.io/oven/bun:1.3
 WORKDIR /app
 
-
 COPY --from=builder /app/package.json /app/package.json
-COPY --from=builder /app/pong /app/pong
+COPY --from=builder /app/milena /app/milena
 
-EXPOSE 3000
-CMD ["/app/pong"]
+EXPOSE 80
+CMD ["/app/milena"]
