@@ -1,0 +1,16 @@
+{
+  "name": "pong",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --hot --watch app.ts",
+    "build": "bun build --compile --minify ./app.ts --outfile pong --target bun"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
